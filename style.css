@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e5e5f5;
+}
+.container {
+  width: 320px;
+  background-color: white;
+  margin: 40px auto 0;
+  box-shadow: 5px 10px 18px #d2cce9;
+}
+.wrapper {
+  width: 100%;
+  padding: 20px;
+}
+.head {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+.head p {
+  font-size: 0.9rem;
+  padding-left: 5px;
+  color: #aaaad3;
+}
+
+/* today */
+.today {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.today h3 {
+  text-transform: uppercase;
+  color: #8b8b8b;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.today > div {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #aaaad3;
+  position: relative;
+}
+.today > div img {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
+/* progress bar */
+.percentage {
+  margin-top: 15px;
+  border: 1px solid #f2f2f2;
+  height: 13px;
+  border-radius: 20px;
+}
+.percentage .purple {
+  height: 100%;
+  width: 33%;
+  background-color: #b3b3ef;
+  border-radius: 20px;
+}
+.progress {
+  color: #aaaad3;
+  margin: 7px 0 15px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* list styles */
+input[type="checkbox"] {
+  display: none;
+}
+
+.flexbox {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+.customCheckboxLabel {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #b5ea81;
+  background-color: white;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .customCheckboxLabel {
+  background-color: #b5ea81;
+  background-image: url("./imgs/check.svg");
+  background-repeat: no-repeat;
+}
+
+.check-text {
+  color: #8b8b8b;
+  font-size: 1rem;
+}
+
+/* hr */
+hr {
+  border: 1px solid #f4f4f4;
+  margin: 20px 0;
+}
+
+/* recurring lists */
+.pull {
+  color: #8b8b8b;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* buttons */
+.btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
