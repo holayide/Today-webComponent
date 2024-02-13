@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Today</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="head">
+          <a href="#"><img src="./imgs/arrow.svg" alt="" /></a>
+          <p>Back to lists</p>
+        </div>
+
+        <!-- today -->
+        <todo-list></todo-list>
+
+        <!-- list-items -->
+        <div id="list-items">
+          <list-items>Meditation</list-items>
+          <list-items>Pick up Anna</list-items>
+          <list-items>Set up meeting with jay</list-items>
+          <list-items>Finish Daily Ui</list-items>
+          <list-items>Second edits on article</list-items>
+          <list-items>Email Chris</list-items>
+        </div>
+
+        <hr />
+
+        <!-- bottom -->
+        <p class="pull">Pull from recurring lists</p>
+        <div class="btns">
+          <event-boxes color="#f5ed84">Daily</event-boxes>
+          <event-boxes color="#b5ea81">Weekly</event-boxes>
+          <event-boxes color="#f8aaaa">Monthly</event-boxes>
+          <event-boxes color="#b3b3ef">Occational</event-boxes>
+        </div>
+
+        <!-- end of wrapper -->
+      </div>
+    </div>
+
+    <script src="./js files/script.js"></script>
+    <script src="./js files/list_items_check.js"></script>
+    <script src="./js files/boxes.js"></script>
+  </body>
+</html>
